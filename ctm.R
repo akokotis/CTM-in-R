@@ -174,9 +174,9 @@ combine4=merge(combine3,kmean_part, by="external_id", all.x=TRUE)
 final_groups=combine4
 
 # Label rows as unclassified if they are not a part of any cluster
-final_groups[which(final_groups$ctm_part1==""),"ctm_part1"] = 0
-final_groups[which(final_groups$ctm_part2==""),"ctm_part2"] = 0
-final_groups[which(final_groups$ctm_part3==""),"ctm_part3"] = 0
+final_groups[which(final_groups$ctm1==""),"ctm1"] = 0
+final_groups[which(final_groups$ctm2==""),"ctm2"] = 0
+final_groups[which(final_groups$ctm3==""),"ctm3"] = 0
 final_groups[which(final_groups$kmeans1==""),"kmeans1"] = 0
 final_groups[which(final_groups$kmeans2==""),"kmeans2"] = 0
 final_groups[which(final_groups$kmeans3==""),"kmeans3"] = 0
