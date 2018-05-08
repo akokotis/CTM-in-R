@@ -118,8 +118,8 @@ control_CTM_VEM <-
 	dtm3_ctm=dtm3[rowTotals3> 0, ]
 	
 	if(length(to_remove1)>0){subset1=subset[-to_remove1,]}else{subset1=subset}
-	if(length(to_remove2)>0){subset2=subset[-to_remove1,]}else{subset2=subset}
-	if(length(to_remove3)>0){subset3=subset[-to_remove1,]}else{subset3=subset}
+	if(length(to_remove2)>0){subset2=subset[-to_remove2,]}else{subset2=subset}
+	if(length(to_remove3)>0){subset3=subset[-to_remove3,]}else{subset3=subset}
 	
 	# Run the CTM models
 	system.time({
